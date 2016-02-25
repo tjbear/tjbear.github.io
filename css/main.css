@@ -747,4 +747,6 @@ footer p {
     .col-5 { width: 88.33%; }
     .col-6 { width: 100%; }
     
+    .no-heading { margin-top: 1em; }
+    
 }
