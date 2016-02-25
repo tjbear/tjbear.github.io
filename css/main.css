@@ -86,6 +86,7 @@ a:hover { color: #00796B; }
 
 .card-pic { display: block; }
 
+/* Fixes lack of top margin on sections without heading (Projects section) */
 .no-heading { margin-top: 1.5em; }
 
 .anchor {
