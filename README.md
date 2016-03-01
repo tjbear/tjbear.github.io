@@ -1,5 +1,7 @@
 # Documentation
 
+**Style Guide:** https://app.frontify.com/d/jGVBIUg7ulOs/tj-bear-style-guide
+
 **Project Management:** https://trello.com/b/Pc5zEESE/front-end-dev-portfolio
 
 **Project Brief:** https://docs.google.com/document/d/17J6M2gjbATWZW9ef5WkHexX19EUhmegmMtWK17f-dfo

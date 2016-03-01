@@ -84,6 +84,7 @@ a:hover { color: #00796B; }
 .text-center { text-align: center; }
 .text-bold { font-weight: 700; }
 
+/* Removes space beneath card images */
 .card-pic { display: block; }
 
 /* Fixes lack of top margin on Projects section */
@@ -155,11 +156,6 @@ h4 {
     margin-top: 1.5em;
 }
 
-/* Clears content from header when using navigation */
-.page-padding {
-    padding-top: 7.7em;
-}
-
 
 
 
@@ -170,6 +166,9 @@ h4 {
 
 /* Clears overview section from header on site load */
 .clear-header { margin-top: 13em; }
+
+/* Clears content from header when using navigation */
+.page-padding { padding-top: 7.7em; }
 
 header {
     position: fixed;
@@ -360,9 +359,7 @@ header {
     border-top: 1px solid lightgray;
 }
 
-.tool-card ul li:first-child {
-    border-top: none;
-}
+.tool-card ul li:first-child { border-top: none; }
 
 /*** Work ***/
 
@@ -375,6 +372,7 @@ header {
     float: left;
     margin-right: 10px;
     margin-top: 5px;
+    width: 50px;
 }
 
 .work-card a { 
@@ -504,9 +502,7 @@ footer a {
     border-bottom: none;
 }
 
-footer a:hover {
-    color: #fff;
-}
+footer a:hover { color: #fff; }
 
 footer p {
     color: #fff;
@@ -605,6 +601,7 @@ footer p {
     .tool-card ul { padding: 0 10px 0 10px; }
     
     h3 { padding: 10px; }
+    
     .skill-card h3 { padding: 5px; }
     
 }
@@ -647,9 +644,7 @@ footer p {
 
 @media only screen and (min-width: 495px) {
     
-    .cta-card p {
-        padding-top: 5px;
-    }
+    .cta-card p { padding-top: 5px; }
     
     .cta-card p a { 
         height: 2em;
@@ -740,9 +735,7 @@ footer p {
         clear: both;
     }
 
-    [class*='col-'] { 
-        float: left;
-    }
+    [class*='col-'] { float: left; }
 
     .col-1 { width: 16.66%; }
     .col-2 { width: 33.33%; }
@@ -754,16 +747,13 @@ footer p {
     
     h2 { font-size: 2em; }
     
-    
     .work-card a[href^="http"] { 
         font-size: 1.5em;
         padding-left: 1em;
         padding-bottom: 3px;
     }
     
-    .work-card {
-        padding-left: 13.5em;
-    }
+    .work-card { padding-left: 13.5em; }
     
     .skill-card img { 
         padding: 0 0 10px 0;
@@ -788,69 +778,59 @@ footer p {
         padding: 10px 0 5px 0;
     }
     
-    img[src*="image"] + div {
-            background-color: #f44336;
-    }
+    img[src*="image"] + div { background-color: #f44336; }
 
     .skill-card ul li { display: inline-block; }
     
+    /* Evens out top margins on overview cards for desktop layout */
     .overview-clear { margin-top: 9.5em; }
-    
-    
-    
-    
-.overview-card { padding: 5px; }
+      
+    .overview-card { padding: 5px; }
 
-.overview-card h2 {
-    font-size: 1.7em;
-    margin: 0;
-    padding: 1em 0 1em 0;
-    text-align: center;
+    .overview-card h2 {
+        font-size: 1.7em;
+        margin: 0;
+        padding: 1em 0 1em 0;
+        text-align: center;
+        }
+
+    .overview-card img { 
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        padding: 1.5em 0 1em 0;
+    }
+    
+    /* Evens out margins on overview cards for desktop layout */
+    .overview-full { margin-bottom: 1.85em; }
+
+    .cta-card object[type="image/svg+xml"] {
+        height: 75px;
+        width: 75px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 10em;
     }
 
-.overview-card img { 
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-    padding: 1.5em 0 1em 0;
-}
-    
-    .test {
-        margin-bottom: 1.85em;
+    .cta-card p { 
+        margin: 0 0 0 0;
+        padding: 0;
+        display: inline-block;
+        padding-left: 5em;
+        font-size: 1.7em;
+        vertical-align: middle;
     }
-   
+
+    .cta-card a {
+        color: #fff;
+        border-bottom: 0;
+    }
+
+    .cta-card a:hover {
+        color: #1de9b6;
+        cursor: pointer;
+    }
     
-    
-    
-
-
-.cta-card object[type="image/svg+xml"] {
-    height: 75px;
-    width: 75px;
-    vertical-align: middle;
-    display: inline-block;
-    margin-left: 10em;
-}
-
-.cta-card p { 
-    margin: 0 0 0 0;
-    padding: 0;
-    display: inline-block;
-    padding-left: 5em;
-    font-size: 1.7em;
-    vertical-align: middle;
-}
-
-.cta-card a {
-    color: #fff;
-    border-bottom: 0;
-}
-
-.cta-card a:hover {
-    color: #1de9b6;
-    cursor: pointer;
-}
     h2 { padding-top: 2rem;}
-
-    
+  
 }
