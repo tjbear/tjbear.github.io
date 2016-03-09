@@ -45,7 +45,7 @@ a {
     border-bottom: 1px dotted #b71c1c;
 }
 
-a:hover { color: #00796B; }
+a:hover { color: #00796b; }
 
 
 
@@ -295,7 +295,7 @@ header {
 .bio-card h3,
 .tool-card h3 {
     color: #fff;
-    background-color: #00796B;
+    background-color: #00796b;
 }
 
 .hobbies { margin-bottom: 0; }
