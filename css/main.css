@@ -414,6 +414,22 @@ header {
 
 .project-card a { border-bottom: none; }
 
+.project-card ul .code-repo {
+    background-color: transparent;
+    position: relative;
+
+}
+
+.code-repo i {
+    position: absolute;
+    top: -3px;
+    color: #fff;
+}
+
+.code-repo i:hover {
+    color: #00796B;
+}
+
 
 
 
@@ -897,5 +913,15 @@ footer p {
       -webkit-animation-iteration-count: 1;
       animation-iteration-count: 1;
     }
+    
+    /* Interactions */
+    
+    .contenthover ul {
+      background-color: transparent;
+      margin-left: 195px;
+    }
+
+    .contenthover ul li a:hover { color: #fff; }
   
 }
+
