@@ -395,12 +395,12 @@ header {
     background-color: #f44336;
 }
 
-.project-card ul {
+.skills-used {
     background-color: #f44336;
     margin: 0;
 }
 
-.project-card ul li {
+.skills-used li {
     display: inline-block;
     font-weight: 700;
     color: #fff;
@@ -518,6 +518,7 @@ footer div {
 footer a {
     color: #64ffda;
     border-bottom: none;
+    display: block;
 }
 
 footer a:hover { color: #fff; }
@@ -532,8 +533,36 @@ footer p {
     letter-spacing: .03em;
 }
 
-.to-top a:hover {
+footer .skills-used {
+    width: 295px;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+    margin-top: 1em;
+}
+
+footer .skills-used li {
+    margin: 10px;
+}
+
+footer .skills-used li:last-child {
     background-color: transparent;
+    margin: 0;
+    margin-bottom: -23px;
+}
+
+footer .skills-used li:last-child a {
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+}
+
+footer .skills-used li:last-child a:hover {
+    color: #00796B;
+}
+
+footer .skills-used li:last-child a i {
+    position: absolute;
+    bottom: 5px;
 }
 
 
@@ -916,12 +945,6 @@ footer p {
     
     /* Interactions */
     
-    .contenthover ul {
-      background-color: transparent;
-      margin-left: 195px;
-    }
-
-    .contenthover ul li a:hover { color: #fff; }
+    .code-repo a { display: none; }
   
 }
-
