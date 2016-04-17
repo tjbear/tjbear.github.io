@@ -430,6 +430,46 @@ header {
     color: #00796B;
 }
 
+.project-card .skills-used { margin-top: 0; }
+
+.full, .project-hover {
+    opacity: 0;
+    position: absolute;
+    display: none;
+}
+
+.project-hover {
+    background: rgba(0, 121, 107, 0);
+    width: 566px;
+    height: 295.859px;
+    transition: .3s ease-in, .5s ease-out;
+}
+
+.overlay { 
+    width: 177.859px;
+    margin: 0 auto;
+    margin-top: 125px;
+    opacity: 0;
+    transition: .3s ease-in, .5s ease-out;
+}
+
+.overlay li {
+    display: inline-block;
+    padding: 1em;
+}
+
+.overlay li a:hover {
+    color: #fff;
+}
+
+.project-hover:hover {
+    background: rgba(0, 121, 107, .8);
+}
+
+.project-hover:hover .overlay {
+    opacity: 1;
+}
+
 
 
 
@@ -945,6 +985,19 @@ footer .skills-used li:last-child a i {
     
     /* Interactions */
     
-    .code-repo a { display: none; }
+    .code-repo a,
+    .mobi { display: none; }
+    
+    .project-card { position: relative; }
+    
+    .full, .project-hover { 
+        opacity: 1;
+    }
+    
+    .project-card .skills-used {
+        margin-top: 295.859px;
+    }
+    
+    .full, .project-hover { display: block; }
   
 }
