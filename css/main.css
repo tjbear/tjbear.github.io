@@ -165,7 +165,7 @@ h4 {
 ********************/
 
 /* Clears overview section from header on site load */
-.clear-header { margin-top: 13em; }
+.clear-header { margin-top: 10.5em; }
 
 /* Clears content from header when using navigation */
 .page-padding { padding-top: 7.7em; }
@@ -191,15 +191,10 @@ header {
     width: 6.250em;
     height: 6.250em;
     text-align: center;
-    margin: 0 auto;
     padding-top: 0.938em;
 }
 
 .logo a { border-bottom: none; }
-
-.logo:hover {
-    background-color: rgba(183, 28, 28, .5); 
-}
 
 /*** Navigation ***/
 
@@ -230,7 +225,34 @@ header {
 
 .main-nav li a:active { color: #64ffda; }
 
+.mobi-nav {
+    float: right;
+    margin-right: 1em;
+    margin-top: 1.5em;
+}
 
+.mobi-nav i {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mobi-toggle { display: none; }
+
+/*
+    nav { margin: 0 auto; }
+
+    .logo,
+    .main-nav { display: inline-block; }
+
+    .logo {margin-left: 1em;}
+
+    .main-nav {
+        position: absolute;
+        right: 1em;
+        top: 2.8em;
+    }
+*/
 
 
 
@@ -834,13 +856,17 @@ footer .skills-used li:last-child a i {
     .tool-card ul li,
     .cta-card a,
     .work-card a {font-size: 1.1em;}
-    
+   
     nav { margin: 0 auto; }
 
     .logo,
     .main-nav { display: inline-block; }
 
     .logo {margin-left: 1em;}
+    
+    .logo:hover {
+    background-color: rgba(183, 28, 28, .5); 
+    }
 
     .main-nav {
         position: absolute;
@@ -848,11 +874,11 @@ footer .skills-used li:last-child a i {
         top: 2.8em;
     }
     
+    .mobi-nav { display: none; }
+    
     .page-padding { padding-top: 4.8em; }
     
     .bcard-hand { padding-bottom: 7.4em; }
-
-    .clear-header { margin-top: 10.5em; }
     
 }
 

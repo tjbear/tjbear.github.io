@@ -1,4 +1,10 @@
-$(document).ready(function() {  
+$(document).ready(function() {
+    
+    // Mobile Menu Button
+    
+    $('.mobi-nav i').click(function() {
+        $('.main-nav').toggleClass('mobi-toggle');
+    });
 
     // Smooth scrolling navigation
     
