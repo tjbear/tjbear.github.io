@@ -290,6 +290,36 @@ header {
 #ABOUT
 ********************/
 
+.line-box{
+  height:20px;
+  width:100%;
+  position:relative;
+  top:65px;
+  right: 1em;
+  margin-left:0;
+}
+
+.line{
+  background-color: rgba(0, 121, 107, .2);
+  height:7px;
+  width:91%;
+  float: right;
+}
+
+.line-box .line-b {
+    width: 87%;
+}
+
+.line-box .line-c {
+    width: 87%;
+}
+
+.line-box .line-d {
+    width: 87.6%;
+}
+
+.line-box, .line { display: none; }
+
 /*** Bio ***/
 
 .bio-card h3,
@@ -936,6 +966,8 @@ footer .skills-used li:last-child a i {
     
     h2 { padding-top: 2rem;}
     
+    .line-box, .line { display: block; }
+    
     /* Animations */
     .hvr-float {
       display: inline-block;
@@ -953,12 +985,6 @@ footer .skills-used li:last-child a i {
     .hvr-float-hand:active {
       transform: translateY(-8px);
     }
-    /*
-    .hvr-float-alt:hover,
-    .hvr-float-alt:focus,
-    .hvr-float-alt:active {
-      transform: translatex(8px);
-    }*/
     
     /* Interactions */ 
     .code-repo a,
@@ -966,13 +992,9 @@ footer .skills-used li:last-child a i {
     
     .project-card { position: relative; }
     
-    .full, .project-hover { 
-        opacity: 1;
-    }
+    .full, .project-hover { opacity: 1; }
     
-    .project-card .skills-used {
-        margin-top: 295.859px;
-    }
+    .project-card .skills-used { margin-top: 295.859px; }
     
     .full, .project-hover { display: block; }
   

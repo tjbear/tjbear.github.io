@@ -28,13 +28,31 @@ $(document).ready(function() {
     
     // CTA Interaction
     
-    $('.cta-card a').mouseover(function() {
-        $('.hvr-float-alt').css('transform', 'translatex(8px)');
-    });
+    checkSize();
     
-        $('.cta-card a').mouseout(function() {
-        $('.hvr-float-alt').css('transform', 'translatex(-8px)');
-    });
+    $(window).resize(checkSize);
    
 });
+
+function checkSize() {
+    if ($('.project-hover').css('opacity') == '1') {
+        $('.cta-card a').mouseover(function() {
+            $('.hvr-float-alt').css('transform', 'translatex(8px)');
+        });
+
+            $('.cta-card a').mouseout(function() {
+            $('.hvr-float-alt').css('transform', 'translatex(-8px)');
+        });
+    }
+    else {
+        $('.hvr-float-alt').css('transform', 'translatex(0px)');
+        $('.cta-card a').mouseover(function() {
+            $('.hvr-float-alt').css('transform', 'translatex(0px)');
+        });
+
+            $('.cta-card a').mouseout(function() {
+            $('.hvr-float-alt').css('transform', 'translatex(0px)');
+        });
+    }
+}
   
