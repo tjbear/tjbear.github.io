@@ -1,16 +1,15 @@
 /*----------------------------------------------*\
-    #DEFININGS
+    #GLOBAL
 \*----------------------------------------------*/
+/********************  
+#DEFININGS
+********************/
 
 @import 'definings';
 
 
 
 
-
-/*----------------------------------------------*\
-    #GLOBAL
-\*----------------------------------------------*/
 
 /********************  
 #GENERIC
@@ -35,7 +34,7 @@ body {
     background-color: $bg-color;
 }
 
-/* Images */
+/*** Images ***/
 
 img { max-width: 100%; }
 
@@ -53,9 +52,8 @@ a {
     font-weight: 700;
     color: $dark-red;
     border-bottom: 1px dotted $dark-red;
+    &:hover { color: $dark-teal; }
 }
-
-a:hover { color: $dark-teal; }
 
 
 
@@ -76,9 +74,8 @@ a:hover { color: $dark-teal; }
     margin: 1em;
     border: 1px solid gray;
     @include box-shadow(1px 1px 3px $shadow-color);
+    p { padding: 0 0.313rem 0 0.313rem; }
 } 
-
-.card p { padding: 0 0.313rem 0 0.313rem; }
 
 
 
@@ -111,12 +108,8 @@ a:hover { color: $dark-teal; }
   content: "";
   display: table;
 }
-.group:after {
-  clear: both;
-}
-.group {
-  *zoom: 1;
-}
+.group:after { clear: both; }
+.group { *zoom: 1; }
 
 
 
@@ -197,11 +190,11 @@ header {
     text-align: center;
     padding-top: 0;
     margin-left: 1em;
+    a { 
+        border-bottom: none;
+        img { width: 50px; }
+    }
 }
-
-.logo a { border-bottom: none; }
-
-.logo a img { width: 50px; }
 
 /*** Navigation ***/
 
@@ -211,34 +204,30 @@ header {
     margin: 0 auto;
     padding: .5em 0 1em 0;
     text-align: center;
+    li {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .05em;
+        padding-bottom: 8px;
+        a {
+            text-decoration: none;
+            color: white;
+            padding: .3em;
+            border-bottom: none;
+            &:active { color: $bright-teal; }
+        }
+    }
 }
-
-.main-nav li {
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: .05em;
-    padding-bottom: 8px;
-}
-
-.main-nav li a {
-    text-decoration: none;
-    color: white;
-    padding: .3em;
-    border-bottom: none;
-}
-
-.main-nav li a:active { color: $bright-teal; }
 
 .mobi-nav {
     float: right;
     margin-right: 1em;
     margin-bottom: 1em;
-}
-
-.mobi-nav i {
-    border: none;
-    color: white;
-    cursor: pointer;
+    i {
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
 }
 
 .mobi-toggle { display: none; }
@@ -251,48 +240,46 @@ header {
 #OVERVIEW
 ********************/
 
-.overview-card { padding: 0.313rem; }
-
-.overview-card h2 {
-    font-size: 1.1em;
-    margin-top: -1.5rem;
-    padding-top: .1em;
-    padding-bottom: .1em;
-    padding-left: 2.188rem;
-}
-
-.overview-card img { 
-    margin-bottom: -0.188rem;
-    width: 1.563em;
+.overview-card { 
+    padding: 0.313rem; 
+    h2 {
+        font-size: 1.1em;
+        margin-top: -1.5rem;
+        padding-top: .1em;
+        padding-bottom: .1em;
+        padding-left: 2.188rem;
+    }
+    img { 
+        margin-bottom: -0.188rem;
+        width: 1.563em;
+    }
 }
 
 /*** CTA ***/
 
-.cta-card { background-color: $main-red; }
-
-.cta-card object[type="image/svg+xml"] {
-    height: 2.5em;
-    width: 2.5em;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-.cta-card p { 
-    margin-left: 3.438em;
-    margin-top: -2.625em;
-    margin-bottom: 0;
-    padding-top: .1em;
-    padding: .2em 0 0 0;
-}
-
-.cta-card a {
-    color: white;
-    border-bottom: 0;
-}
-
-.cta-card a:hover {
-    color: $main-teal;
-    cursor: pointer;
+.cta-card { 
+    background-color: $main-red; 
+    object[type="image/svg+xml"] {
+        height: 2.5em;
+        width: 2.5em;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    p { 
+        margin-left: 3.438em;
+        margin-top: -2.625em;
+        margin-bottom: 0;
+        padding-top: .1em;
+        padding: .2em 0 0 0;
+    }
+    a {
+        color: white;
+        border-bottom: 0;
+        &:hover {
+            color: $main-teal;
+            cursor: pointer;
+        }
+    }
 }
 
 
@@ -303,35 +290,25 @@ header {
 #ABOUT
 ********************/
 
-.line-box{
-  height:20px;
-  width:100%;
-  position:relative;
-  top:65px;
-  right: 1em;
-  margin-left:0;
+.line-box {
+    height:20px;
+    width:100%;
+    position:relative;
+    top:65px;
+    right: 1em;
+    margin-left:0;
+    .line {
+        background-color: $dark-teal-faded;
+        height:7px;
+        width:91%;
+        float: right;
+    }
+    .line-b { width: 87%; }
+    .line-c { width: 87%; }
+    .line-d { width: 87.6%; }
 }
 
-.line{
-  background-color: $dark-teal-faded;
-  height:7px;
-  width:91%;
-  float: right;
-}
-
-.line-box .line-b {
-    width: 87%;
-}
-
-.line-box .line-c {
-    width: 87%;
-}
-
-.line-box .line-d {
-    width: 87.6%;
-}
-
-.line-box, .line { display: none; }
+.line-box, .line { display: none; } 
 
 /*** Bio ***/
 
@@ -341,88 +318,83 @@ header {
     background-color: $dark-teal;
 }
 
-.hobbies { margin-bottom: 0; }
-
-.hobbies li {
-    border-top: 1px solid lightgray;
-    padding: 0.313em 0 0.313em 0;
-}
-
-.hobbies li img {
-    margin-left: 0.313em;
-    margin-right: 0.313em;
-    margin-bottom: -0.250em;
+.hobbies { 
+    margin-bottom: 0; 
+    li {
+        border-top: 1px solid lightgray;
+        padding: 0.313em 0 0.313em 0;
+        img {
+            margin-left: 0.313em;
+            margin-right: 0.313em;
+            margin-bottom: -0.250em;
+        }
+    }
 }
 
 /*** Skills ***/
 
-.skill-card img { padding-left: 1.250em; }
+.skill-card {
+    img { padding-left: 1.250em; }
+    h3 {
+        margin-left: 4.688rem;
+        margin-top: 0.625rem;
+        margin-bottom: -1.875rem;
+    }
+    h4 {
+        color: white;
+        background-color: $main-red;
+    }
+    ul {
+        margin: -1.375rem 0.938rem 0 0;
+        float: right;
+        li { display: inline-block; }
+    }
+    .skill-point-on {
+        width: 0.938em;
+        height: 0.938em;
+        border-radius: 50%;
+        background-color: $main-teal;
+        margin-right: 0.313em;
+    }
 
-.skill-card h3 {
-    margin-left: 4.688rem;
-    margin-top: 0.625rem;
-    margin-bottom: -1.875rem;
-}
-
-.skill-card h4 {
-    color: white;
-    background-color: $main-red;
-}
-
-.skill-card ul {
-    margin: -1.375rem 0.938rem 0 0;
-    float: right;
-}
-
-.skill-card ul li { display: inline-block; }
-
-.skill-point-on {
-    width: 0.938em;
-    height: 0.938em;
-    border-radius: 50%;
-    background-color: $main-teal;
-    margin-right: 0.313em;
-}
-
-.skill-point-off {
-    width: 0.938em;
-    height: 0.938em;
-    border-radius: 50%;
-    background-color: $bright-teal-faded;
-    margin-right: 0.313em;
+    .skill-point-off {
+        width: 0.938em;
+        height: 0.938em;
+        border-radius: 50%;
+        background-color: $bright-teal-faded;
+        margin-right: 0.313em;
+    }
 }
 
 /*** Tools ***/
 
-.tool-card ul {
-    padding: 0 0.313em 0 0.313em;
-    margin: 0;
-}
-
-.tool-card ul li {
-    padding: 1em 0 1em 0;
-    border-top: 1px solid lightgray;
-}
-
-.tool-card ul li:first-child { border-top: none; }
+.tool-card {
+    ul {
+        padding: 0 0.313em 0 0.313em;
+        margin: 0;
+        li {
+            padding: 1em 0 1em 0;
+            border-top: 1px solid lightgray;
+            &:first-child { border-top: none; }
+        }
+    }
+} 
 
 /*** Work ***/
 
 .work-card {
     border: 5px solid $main-red;
     padding: 0.625em;
-}
-
-.work-card img { 
-    float: left;
-    margin-right: 0.625em;
-    margin-top: 0.313em;
-    width: 3.125em;
-}
-
-.work-card a { 
-    border: none;
-    text-transform: uppercase;
+    img { 
+        float: left;
+        margin-right: 0.625em;
+        margin-top: 0.313em;
+        width: 3.125em;
+    }
+    a { 
+        border: none;
+        text-transform: uppercase;
+    }
 }
 
 
@@ -433,47 +405,13 @@ header {
 #PROJECTS
 ********************/
 
-.project-card h3 {
-    color: white;
-    background-color: $main-red;
+.project-card {
+    h3 {
+        color: white;
+        background-color: $main-red;
+    }
+    a { border-bottom: none; }
 }
-
-.skills-used {
-    background-color: $main-red;
-    margin: 0;
-}
-
-.skills-used li {
-    display: inline-block;
-    font-weight: 700;
-    color: white;
-    background-color: $dark-teal;
-    padding: 0.313rem 0.625rem 0.313rem 0.625rem;
-    margin: 0.625rem 0 0.625rem 0.625rem;
-    border-radius: 10%;
-    font-size: .8em;
-    letter-spacing: .07em;
-}
-
-.project-card a { border-bottom: none; }
-
-.project-card ul .code-repo {
-    background-color: transparent;
-    position: relative;
-
-}
-
-.code-repo i {
-    position: absolute;
-    top: -3px;
-    color: white;
-}
-
-.code-repo i:hover {
-    color: $dark-teal;
-}
-
-.project-card .skills-used { margin-top: 0; }
 
 .full, .project-hover {
     opacity: 0;
@@ -486,6 +424,10 @@ header {
     width: 566px;
     height: 295.859px;
     transition: .3s ease-in, .5s ease-out;
+    &:hover { 
+        background-color: $dark-teal-overlay;
+        .overlay { opacity: 1; }
+    }
 }
 
 .overlay { 
@@ -494,23 +436,40 @@ header {
     margin-top: 125px;
     opacity: 0;
     transition: .3s ease-in, .5s ease-out;
+    li {
+        display: inline-block;
+        padding: 1em;
+        a:hover { color: white; }
+    }
 }
 
-.overlay li {
-    display: inline-block;
-    padding: 1em;
+.skills-used { 
+    margin: 0; 
+    background-color: $main-red;
+    li {
+        display: inline-block;
+        font-weight: 700;
+        color: white;
+        background-color: $dark-teal;
+        padding: 0.313rem 0.625rem 0.313rem 0.625rem;
+        margin: 0.625rem 0 0.625rem 0.625rem;
+        border-radius: 10%;
+        font-size: .8em;
+        letter-spacing: .07em;
+    }
 }
 
-.overlay li a:hover {
-    color: white;
-}
-
-.project-hover:hover {
-    background: $dark-teal-overlay;
-}
-
-.project-hover:hover .overlay {
-    opacity: 1;
+ul {
+    .code-repo {
+        background-color: transparent;
+        position: relative;
+        i {
+            position: absolute;
+            top: -3px;
+            color: white;
+            &:hover { color: $dark-teal; }
+        } 
+    }  
 }
 
 
@@ -521,61 +480,53 @@ header {
 #CONTACT
 ********************/
 
-.contact-card-header {
-    background-color: $main-red;
-    padding-top: 1em;
-    padding-bottom: 1em;
+.contact-card {
+    .contact-card-header {
+        background-color: $main-red;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        + h2 { margin-top: 1em; }
+    }
+    h1, h2, h3, h4 {
+        padding: 0;
+        margin: 0;
+    }
+    h2 { font-size: 1.2em; }
+    h3 {
+        color: white;
+        font-size: .8em;
+        letter-spacing: .08em;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: .5em;
+    }
+    + img {
+        display: block;
+        margin: 0 auto;
+        margin-top: -1em;
+    }
+    a { border-bottom: none; }
+    hr { 
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .social-nav { 
+        text-align: center; 
+        li {
+            display: inline-block;
+            padding-left: 0.313em;
+            padding-right: 0.313em;
+        }
+        a { 
+            color: $dark-teal; 
+            &:hover { color: $dark-red; }
+        }
+    }
 }
 
-.contact-card h1,
-.contact-card h2,
-.contact-card h3,
-.contact-card h4 {
-    padding: 0;
-    margin: 0;
-}
-
-.contact-card h2 { font-size: 1.2em; }
-.contact-card-header + h2 { margin-top: 1em; }
-
-.contact-card h3 {
-    color: white;
-    font-size: .8em;
-    letter-spacing: .08em;
-}
-
-.contact-card img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: .5em;
-}
-
-.contact-card + img {
-    display: block;
-    margin: 0 auto;
-    margin-top: -1em;
-}
-
-.contact-card a { border-bottom: none; }
-
-.contact-card hr { 
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-}
-
-.social-nav { text-align: center; }
-
-.social-nav li {
-    display: inline-block;
-    padding-left: 0.313em;
-    padding-right: 0.313em;
-}
-
-.social-nav a { color: $dark-teal; }
-
-.social-nav a:hover { color: $dark-red; }
-
-.bcard-hand { padding-bottom: 3.4em; }
+.bcard-hand { padding-bottom: 3.4em; } 
 
 
 
@@ -588,70 +539,58 @@ header {
 footer {
     background-color: $main-red;
     position: relative;
-}
-
-footer div {
-    text-align: center;
-    vertical-align: middle;
-    background-color: $main-red;  
-    width: 6.250em;
-    height: 6.250em;
-    padding-top: 0.625em;
-    margin: 0 auto;
-    border-radius: 50%;
-    position: relative;
-    top: -2.188em;
-    z-index: 1;
-}
-
-footer a {
-    color: $bright-teal;
-    border-bottom: none;
-    display: block;
-}
-
-footer a:hover { color: white; }
-
-footer p {
-    color: white;
-    margin: 0;
-    padding-bottom: 1em;
-    margin-top: -3.750em;
-    position: relative;
-    z-index: 2;
-    letter-spacing: .03em;
-}
-
-footer .skills-used {
-    width: 295px;
-    margin: 0 auto;
-    padding-bottom: 1.5em;
-    margin-top: 1em;
-}
-
-footer .skills-used li {
-    margin: 10px;
-}
-
-footer .skills-used li:last-child {
-    background-color: transparent;
-    margin: 0;
-    margin-bottom: -23px;
-}
-
-footer .skills-used li:last-child a {
-    background-color: transparent;
-    color: white;
-    position: relative;
-}
-
-footer .skills-used li:last-child a:hover {
-    color: $dark-teal;
-}
-
-footer .skills-used li:last-child a i {
-    position: absolute;
-    bottom: 5px;
+    div {
+        text-align: center;
+        vertical-align: middle;
+        background-color: $main-red;  
+        width: 6.250em;
+        height: 6.250em;
+        padding-top: 0.625em;
+        margin: 0 auto;
+        border-radius: 50%;
+        position: relative;
+        top: -2.188em;
+        z-index: 1;
+    }
+    a {
+        color: $bright-teal;
+        border-bottom: none;
+        display: block;
+        &:hover { color: white; }
+    }
+    p {
+        color: white;
+        margin: 0;
+        padding-bottom: 1em;
+        margin-top: -3.750em;
+        position: relative;
+        z-index: 2;
+        letter-spacing: .03em;
+    }
+    .skills-used {
+        width: 295px;
+        margin: 0 auto;
+        padding-bottom: 1.5em;
+        margin-top: 1em;
+        li { 
+            margin: 10px;
+            &:last-child {
+                background-color: transparent;
+                margin: 0;
+                margin-bottom: -23px;
+                a {
+                    background-color: transparent;
+                    color: white;
+                    position: relative;
+                    &:hover { color: $dark-teal; }
+                    i {
+                        position: absolute;
+                        bottom: 5px;
+                    }
+                }
+            } 
+        }
+    }
 }
 
 
