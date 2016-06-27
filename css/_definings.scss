@@ -1,0 +1,47 @@
+/********************  
+#VARIABLES
+********************/
+
+/*** Color Palette ***/
+
+$main-red: rgb(244, 67, 54);
+$dark-red: rgb(183, 28, 28);
+
+$main-teal: rgb(29, 233, 182);
+$dark-teal: rgb(0, 121, 107);
+$dark-teal-faded: rgba(0, 121, 107, .2);
+$dark-teal-hidden: rgba(0, 121, 107, 0);
+$dark-teal-overlay: rgba(0, 121, 107, .8);
+$bright-teal: rgb(100, 255, 218);
+$bright-teal-faded: rgba(100, 255, 218, .3);
+
+
+$bg-color: rgb(250, 250, 250);
+$shadow-color: rgb(136, 136, 136);
+
+/*** Typography ***/
+
+$main-font: proxima-nova, sans-serif;
+$secondary-font: Adelle, serif;
+
+
+
+
+
+/********************  
+#MIXINS
+********************/
+
+/*** Box Shadows ***/
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+            box-shadow: $shadow; 
+} 
+
+@mixin double-box-shadow($shadow1, $shadow2) {
+    -webkit-box-shadow: $shadow1, $shadow2;
+       -moz-box-shadow: $shadow1, $shadow2;
+            box-shadow: $shadow1, $shadow2;
+}

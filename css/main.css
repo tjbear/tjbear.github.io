@@ -1,7 +1,19 @@
 /*----------------------------------------------*\
+    #DEFININGS
+\*----------------------------------------------*/
+/********************  
+#VARIABLES
+********************/
+/*** Color Palette ***/
+/*** Typography ***/
+/********************  
+#MIXINS
+********************/
+/*** Box Shadows ***/
+/*----------------------------------------------*\
     #GLOBAL
 \*----------------------------------------------*/
-/******************** 
+/********************  
 #GENERIC
 ********************/
 /* Flexible viewport fix for IE10 */
@@ -47,17 +59,17 @@ a:hover {
   margin: 0 auto; }
 
 .card {
-  background-color: #fff;
+  background-color: white;
   margin: 1em;
   border: 1px solid gray;
-  -webkit-box-shadow: 1px 1px 3px #888;
-  -moz-box-shadow: 1px 1px 3px #888;
-  box-shadow: 1px 1px 3px #888; }
+  -webkit-box-shadow: 1px 1px 3px #888888;
+  -moz-box-shadow: 1px 1px 3px #888888;
+  box-shadow: 1px 1px 3px #888888; }
 
 .card p {
   padding: 0 0.313rem 0 0.313rem; }
 
-/******************** 
+/********************  
 #TRUMPS
 ********************/
 .text-caps {
@@ -126,7 +138,7 @@ h4 {
 
 .section-header {
   font-family: Adelle, serif;
-  color: #fff;
+  color: white;
   background-color: #00796b;
   padding-left: 1rem;
   margin-top: 1.5em; }
@@ -183,7 +195,7 @@ header {
 
 .main-nav li a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   padding: .3em;
   border-bottom: none; }
 
@@ -197,7 +209,7 @@ header {
 
 .mobi-nav i {
   border: none;
-  color: #fff;
+  color: white;
   cursor: pointer; }
 
 .mobi-toggle {
@@ -238,7 +250,7 @@ header {
   padding: .2em 0 0 0; }
 
 .cta-card a {
-  color: #fff;
+  color: white;
   border-bottom: 0; }
 
 .cta-card a:hover {
@@ -277,7 +289,7 @@ header {
 /*** Bio ***/
 .bio-card h3,
 .tool-card h3 {
-  color: #fff;
+  color: white;
   background-color: #00796b; }
 
 .hobbies {
@@ -302,7 +314,7 @@ header {
   margin-bottom: -1.875rem; }
 
 .skill-card h4 {
-  color: #fff;
+  color: white;
   background-color: #f44336; }
 
 .skill-card ul {
@@ -357,7 +369,7 @@ header {
 #PROJECTS
 ********************/
 .project-card h3 {
-  color: #fff;
+  color: white;
   background-color: #f44336; }
 
 .skills-used {
@@ -367,7 +379,7 @@ header {
 .skills-used li {
   display: inline-block;
   font-weight: 700;
-  color: #fff;
+  color: white;
   background-color: #00796b;
   padding: 0.313rem 0.625rem 0.313rem 0.625rem;
   margin: 0.625rem 0 0.625rem 0.625rem;
@@ -385,10 +397,10 @@ header {
 .code-repo i {
   position: absolute;
   top: -3px;
-  color: #fff; }
+  color: white; }
 
 .code-repo i:hover {
-  color: #00796B; }
+  color: #00796b; }
 
 .project-card .skills-used {
   margin-top: 0; }
@@ -416,7 +428,7 @@ header {
   padding: 1em; }
 
 .overlay li a:hover {
-  color: #fff; }
+  color: white; }
 
 .project-hover:hover {
   background: rgba(0, 121, 107, 0.8); }
@@ -446,7 +458,7 @@ header {
   margin-top: 1em; }
 
 .contact-card h3 {
-  color: #fff;
+  color: white;
   font-size: .8em;
   letter-spacing: .08em; }
 
@@ -510,10 +522,10 @@ footer a {
   display: block; }
 
 footer a:hover {
-  color: #fff; }
+  color: white; }
 
 footer p {
-  color: #fff;
+  color: white;
   margin: 0;
   padding-bottom: 1em;
   margin-top: -3.750em;
@@ -537,11 +549,11 @@ footer .skills-used li:last-child {
 
 footer .skills-used li:last-child a {
   background-color: transparent;
-  color: #fff;
+  color: white;
   position: relative; }
 
 footer .skills-used li:last-child a:hover {
-  color: #00796B; }
+  color: #00796b; }
 
 footer .skills-used li:last-child a i {
   position: absolute;
@@ -550,6 +562,9 @@ footer .skills-used li:last-child a i {
 /*----------------------------------------------*\
     #MEDIA-QUERIES RESPONSIVE LAYOUT
 \*----------------------------------------------*/
+/******************** 
+#MOBILE-TABLET
+********************/
 @media only screen and (min-width: 340px) {
   .contact-card {
     max-width: 17.188rem;
@@ -694,7 +709,9 @@ footer .skills-used li:last-child a i {
 
   .bcard-hand {
     padding-bottom: 7.4em; } }
-/* Desktop Grid Layout */
+/******************** 
+#DESKTOP-FULL
+********************/
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 75em; }
@@ -809,7 +826,7 @@ footer .skills-used li:last-child a i {
   .line-box, .line {
     display: block; }
 
-  /* Animations */
+  /*** Animations ***/
   .hvr-float {
     display: inline-block;
     vertical-align: middle;
@@ -826,7 +843,7 @@ footer .skills-used li:last-child a i {
   .hvr-float-hand:active {
     transform: translateY(-8px); }
 
-  /* Interactions */
+  /*** Interactions ***/
   .code-repo a,
   .mobi {
     display: none; }

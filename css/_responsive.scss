@@ -1,0 +1,383 @@
+/******************** 
+#MOBILE-TABLET
+********************/
+
+@media only screen and (min-width: 340px) {
+
+    .contact-card { 
+        max-width: 17.188rem;
+        margin: 1.5em auto;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 360px) {
+    
+    .work-card { padding: 0.938rem; }
+    
+}
+
+
+
+@media only screen and (min-width: 370px) {
+    
+    .main-nav li a { padding: .5em; }
+    
+    .work-card { padding: 1.250rem; }
+    
+}
+
+
+
+@media only screen and (min-width: 385px) {
+    
+    .work-card img { margin-right: 0.938rem; }
+   
+}
+
+
+
+@media only screen and (min-width: 390px) {
+    
+    .work-card { position: relative; }
+    
+    .work-card a[href*="drive.google"] { 
+        position: absolute;
+        padding-right: 1.250rem;
+        bottom: 1.688rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 395px) {
+    
+    .work-card a[href*="myportfolio"] {
+        position: absolute;
+        padding-right: 1.250rem;
+        bottom: 1.688rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 400px) {
+    
+    .card p { padding: 0 0.625rem 0 0.625rem; }
+    
+    .overview-card { padding: 0.625rem; }
+    
+    .hobbies li img {
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+    }
+    
+    .tool-card ul { padding: 0 0.625rem 0 0.625rem; }
+    
+    h3 { padding: 0.625rem; }
+    
+    .skill-card h3 { padding: 0.313rem; }
+    
+}
+
+
+
+@media only screen and (min-width: 418px) {
+
+    .work-card a[href*="buffalo.io"] { 
+        position: absolute;
+        padding-right: 1.250rem;
+        bottom: 1.688rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 424px) {
+
+    .work-card a { 
+        position: absolute;
+        padding-right: 1.250rem;
+        bottom: 1.688rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 443px) {
+    
+    .cta-card p {
+        max-width: 15.625rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 580px) {
+    
+    .work-card a[href*="myportfolio"] { 
+        padding-bottom: 0.5rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 495px) {
+    
+    .cta-card p { padding-top: 0.313rem; }
+    
+    .cta-card p a { 
+        height: 2em;
+        line-height: 2em;
+        white-space: nowrap;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 593px) {
+    
+    .work-card img { margin-top: 0; }
+    
+    .work-card a[href*="buffalo.io"] { 
+        padding-bottom: 0.5rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 608px) {
+    
+    .work-card img { margin-top: 0; }
+    
+    .work-card a[href*="drive.google"] { 
+        padding-bottom: 0.5rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 654px) {
+    
+    .work-card img { margin-top: 0; }
+    
+    .work-card a[href*="myportfolio"] { 
+        padding-bottom: 0.5rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 700px) {
+    
+    .clear-header { margin-top: 10.5em; }
+    
+    header { padding: 1em 0 1em 0; }
+   
+    nav { margin: 0 auto; }
+    
+    .logo,
+    .main-nav { display: inline-block; }
+
+    .logo {
+        margin-left: 1em;
+        width: 6.250em;
+        height: 6.250em;
+        padding-top: 0.938em;
+    }
+    
+    .logo:hover {
+    background-color: rgba(183, 28, 28, .5); 
+    }
+
+    .logo a img { width: 75px; }
+    
+    .main-nav {
+        width: inherit;
+        margin: 0;
+        position: absolute;
+        right: 1em;
+        top: 2.8em;
+    }
+    
+    .main-nav li { display: inline-block; } 
+
+    .main-nav li a:hover {
+        background-color: rgba(183, 28, 28, .5);
+    }
+    
+    .mobi-nav { display: none; }
+    
+    .page-padding { padding-top: 4.8em; }
+    
+    .bio-card p,
+    .hobbies li,
+    .tool-card ul li,
+    .cta-card a,
+    .work-card a {font-size: 1.1em;}
+    
+    .bcard-hand { padding-bottom: 7.4em; }
+    
+}
+
+
+
+
+
+/******************** 
+#DESKTOP-FULL
+********************/
+
+@media only screen and (min-width: 1400px) {
+    
+    .container { max-width: 75em; }
+
+    /* Grid clearfix */
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    [class*='col-'] { float: left; }
+
+    .col-1 { width: 16.66%; }
+    .col-2 { width: 33.33%; }
+    .col-3 { width: 50%; }
+    
+    .project-card { margin-top: 1.5em; }
+    
+    h2 { font-size: 2em; }
+    
+    .work-card a[href^="http"] { 
+        font-size: 1.5em;
+        padding-left: 1em;
+        padding-bottom: 0.188rem;
+    }
+    
+    .work-card { padding-left: 13.5em; }
+    
+    .skill-card img { 
+        padding: 0 0 0.625em 0;
+        display: block;
+        margin: 0 auto;
+        }
+
+    .skill-card h3 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .skill-card h4 {
+        visibility: collapse;
+        position: absolute;
+    }
+
+    .skill-card ul {
+        margin: 0;
+        float: none;
+        text-align: center;
+        padding: 0.625em 0 0.313em 0;
+    }
+    
+    img[src*="image"] + div { background-color: #f44336; }
+
+    .skill-card ul li { display: inline-block; }
+    
+    /* Evens out top margins on overview cards for desktop layout */
+    .overview-clear { margin-top: 9.5em; }
+      
+    .overview-card { padding: 0.313em; }
+
+    .overview-card h2 {
+        font-size: 1.7em;
+        margin: 0;
+        padding: 1em 0 1em 0;
+        text-align: center;
+        }
+
+    .overview-card img { 
+        width: 6.250em;
+        display: block;
+        margin: 0 auto;
+        padding: 1.5em 0 1em 0;
+    }
+    
+    /* Evens out margins on overview cards for desktop layout */
+    .overview-full { margin-bottom: 1.85em; }
+
+    .cta-card object[type="image/svg+xml"] {
+        height: 4.688em;
+        width: 4.688em;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 10em;
+    }
+
+    .cta-card p { 
+        margin: 0 0 0 0;
+        padding: 0;
+        display: inline-block;
+        padding-left: 5em;
+        font-size: 1.7em;
+        vertical-align: middle;
+    }
+
+    .cta-card a {
+        color: #fff;
+        border-bottom: 0;
+    }
+
+    .cta-card a:hover {
+        color: #1de9b6;
+        cursor: pointer;
+    }
+    
+    h2 { padding-top: 2rem;}
+    
+    .line-box, .line { display: block; }
+    
+    /*** Animations ***/
+    .hvr-float {
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      transition-duration: 0.3s;
+      transition-property: transform;
+      transition-timing-function: ease-out;
+    }
+    .hvr-float-hand:hover,
+    .hvr-float-hand:focus,
+    .hvr-float-hand:active {
+      transform: translateY(-8px);
+    }
+    
+    /*** Interactions ***/ 
+    .code-repo a,
+    .mobi { display: none; }
+    
+    .project-card { position: relative; }
+    
+    .full, .project-hover { opacity: 1; }
+    
+    .project-card .skills-used { margin-top: 295.859px; }
+    
+    .full, .project-hover { display: block; }
+  
+}
